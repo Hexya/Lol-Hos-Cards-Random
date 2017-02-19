@@ -49,7 +49,8 @@ class App extends Component {
     let newTitle = this.state.position + 1
     return (
       <div className="App">
-        <button onClick={()=>this.prevSlide()}> Prev </button>
+        <h1>React Carousel</h1>
+        <button onClick={()=>this.prevSlide()}> ← </button>
 
         <div className="container">
           <h2>Photo = {newTitle}</h2>
@@ -64,7 +65,7 @@ class App extends Component {
 
         </div>
 
-          <button onClick={()=>this.nextSlide()}> Next </button>
+          <button onClick={()=>this.nextSlide()}> → </button>
           {/* double fonction pour eviter que la premiere ne se lance auto */}
       </div>
     );
